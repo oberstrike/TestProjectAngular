@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TestProjectAngular';
+  countries: string[] = ['Deutschland', 'Dänemark', 'England', 'Frankreich', 'Italien', 'Schweden', 'Polen', 'Portugal', 'Luxemburg'];
+
 }
+
