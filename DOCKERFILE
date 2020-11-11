@@ -1,0 +1,14 @@
+#FROM node:15.0.1-alpine3.10 AS builder
+#COPY . ./TestProjectAngular
+#WORKDIR /TestProjectAngular
+#RUN npm i
+#RUN $(npm bin)/ng build --prod
+
+FROM nginxinc/nginx-unprivileged:1.18-alpine
+WORKDIR /opt/ng
+USER root
+#COPY --from=builder /TestProjectAngular/dist/TestProjectAngular/ /usr/share/nginx/html
+COPY /dist/TestProjectAngular/ /usr/share/nginx/html
+COPY nginx-custom.conf /etc/nginx/conf.d/default.conf
+RUN chown -R 1001 /usr/share/nginx/html
+
