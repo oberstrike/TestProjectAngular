@@ -120,6 +120,15 @@
           }
         }
       }
-    }},
-  "defaultProject": "TestProjectAngular"
+    }
+  },
+  "defaultProject": "TestProjectAngular",
+  "cli": {
+    "analytics": "2c12235b-8df4-4b84-a497-0c2b44ba9a48"
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

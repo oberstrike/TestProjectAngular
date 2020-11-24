@@ -1,0 +1,24 @@
+<div class="mr-auto">
+  <h2>Länder Europas</h2>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let country of countries; index as i">
+      <th scope="row">{{i + 1}}</th>
+      <td (click)="onClick(country.name)">
+        {{country.name}}
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
+
