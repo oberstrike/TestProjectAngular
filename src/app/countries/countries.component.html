@@ -13,8 +13,8 @@
     <tbody>
     <tr *ngFor="let country of countries; index as i">
       <th scope="row">{{i + 1}}</th>
-      <td (click)="onClick(country.name)">
-        {{country.name}}
+      <td>
+        <a [routerLink]="['/country', country.id]" [state]="country">{{country.name}}</a>
       </td>
     </tr>
     </tbody>

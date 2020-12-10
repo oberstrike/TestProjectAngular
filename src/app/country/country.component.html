@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row border" *ngIf="!isFirst">
+    <div class="col-11" >
+      <fa-icon [icon]="leftArrowIcon" size="2x"></fa-icon>
+    </div>
+
+    <div class="col-1" *ngIf="!isLast">
+      <fa-icon [icon]="rightArrowIcon" size="2x"></fa-icon>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md">Id</div>
+    <div class="col-md">{{country.id}}</div>
+  </div>
+  <div class="row">
+    <div class="col-md">Name</div>
+    <div class="col-md">{{country.name}}</div>
+  </div>
+</div>
