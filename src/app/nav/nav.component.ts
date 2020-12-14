@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {faBook, faQuestion, faStar} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -11,9 +10,7 @@ export class NavComponent implements OnInit {
 
   title = 'Polit.me';
   toggleNavbar = true;
-  starIcon = faStar;
-  questionIcon = faQuestion;
-  bookIcon = faBook;
+
 
   constructor() {
   }

@@ -5,22 +5,28 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavComponent } from './nav/nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { CountriesComponent } from './countries/countries.component';
 import { AppRoutingModule } from './app-routing.module';
-import { CountryComponent } from './country/country.component';
+import { HomeComponent } from './home/home.component';
+import { SubjectsComponent } from './subjects/subjects.component';
+import { QuestionsComponent } from './questions/questions.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { CustomNumberDatePipe } from './shared/pipes/custom.number.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    CountriesComponent,
-    CountryComponent
+    HomeComponent,
+    SubjectsComponent,
+    QuestionsComponent,
+    CustomNumberDatePipe
   ],
   imports: [
     BrowserModule,
     NgbModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

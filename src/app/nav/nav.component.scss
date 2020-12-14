@@ -2,6 +2,11 @@
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
 
-
-$navbar-dark-color: color("red");
+.nav.navbar-nav li a {
+  color: #fff !important;
+}
+.nav .navbar-nav li a:hover {
+  color: grey !important;
+}
