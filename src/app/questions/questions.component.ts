@@ -26,6 +26,8 @@ export class QuestionsComponent implements OnInit {
 
   deleteIcon = faTrash;
 
+  selectedFiles?: FileList;
+
   constructor(private questionService: QuestionService) {
   }
 
@@ -33,4 +35,9 @@ export class QuestionsComponent implements OnInit {
     this.questions = this.questionService.getAllQuestions();
   }
 
+  selectFile(event: any): void {
+    this.selectedFiles = event.target.files;
+    const file: File = this.selectedFiles[0] as File;
+
+  }
 }
